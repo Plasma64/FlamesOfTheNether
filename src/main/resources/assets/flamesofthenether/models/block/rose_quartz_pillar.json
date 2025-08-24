@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "flamesofthenether:block/rose_quartz_pillar_top",
+    "side": "flamesofthenether:block/rose_quartz_pillar"
+  }
+}

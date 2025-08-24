@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/rose_quartz_block",
+    "side": "flamesofthenether:block/rose_quartz_block",
+    "top": "flamesofthenether:block/rose_quartz_block"
+  }
+}

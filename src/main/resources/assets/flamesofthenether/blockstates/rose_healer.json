@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "triggered=false": {
+      "model": "flamesofthenether:block/rose_healer"
+    },
+    "triggered=true": {
+      "model": "flamesofthenether:block/rose_healer_on"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "flamesofthenether:block/rose_healer_side",
+    "side": "flamesofthenether:block/rose_healer_side",
+    "top": "flamesofthenether:block/rose_healer_top_on"
+  }
+}

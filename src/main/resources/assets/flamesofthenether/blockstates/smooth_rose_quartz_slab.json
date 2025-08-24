@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "flamesofthenether:block/smooth_rose_quartz_slab"
+    },
+    "type=double": {
+      "model": "flamesofthenether:block/smooth_rose_quartz"
+    },
+    "type=top": {
+      "model": "flamesofthenether:block/smooth_rose_quartz_slab_top"
+    }
+  }
+}
