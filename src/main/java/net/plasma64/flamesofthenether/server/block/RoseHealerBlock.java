@@ -1,9 +1,6 @@
 package net.plasma64.flamesofthenether.server.block;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -25,7 +22,7 @@ public class RoseHealerBlock extends BaseEntityBlock {
 
     public RoseHealerBlock(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(this.defaultBlockState().setValue(TRIGGERED, Boolean.valueOf(false)));
+        this.registerDefaultState(this.defaultBlockState().setValue(TRIGGERED, Boolean.FALSE));
     }
 
     @Override
@@ -35,12 +32,12 @@ public class RoseHealerBlock extends BaseEntityBlock {
             boolean flag1 = pLevel.hasNeighborSignal(pPos);
 
             if (flag != flag1) {
-                pLevel.setBlock(pPos, pState.setValue(TRIGGERED, Boolean.valueOf(flag1)), 3);
+                pLevel.setBlock(pPos, pState.setValue(TRIGGERED, flag1), 3);
             }
             BlockEntity entity = pLevel.getBlockEntity(pPos);
             if (flag && entity instanceof RoseHealerBlockEntity roseHealerBlockEntity) {
                 if (!roseHealerBlockEntity.isOnCooldown()) {
-                    ((RoseHealerBlockEntity) entity).setTriggeredCooldown(200);
+                    roseHealerBlockEntity.setTriggeredCooldown(200);
                 }
             }
         }
@@ -53,7 +50,7 @@ public class RoseHealerBlock extends BaseEntityBlock {
 
     @Override
     public @Nullable BlockState getStateForPlacement(BlockPlaceContext pContext) {
-        return this.defaultBlockState().setValue(TRIGGERED, Boolean.valueOf(pContext.getLevel().hasNeighborSignal(pContext.getClickedPos())));
+        return this.defaultBlockState().setValue(TRIGGERED, pContext.getLevel().hasNeighborSignal(pContext.getClickedPos()));
     }
 
     @Override

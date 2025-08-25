@@ -9,6 +9,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
+import net.plasma64.flamesofthenether.server.block.RoseHealerBlock;
 
 import java.util.List;
 
@@ -21,14 +23,15 @@ public class RoseHealerBlockEntity extends BlockEntity {
         super(FOTNBlockEntityRegistry.ROSE_HEALER.get(), pPos, pBlockState);
     }
 
-    public static void tick(Level level, BlockPos blockPos, BlockState state, RoseHealerBlockEntity entity) {
+    public static void tick(Level level, BlockPos pos, BlockState state, RoseHealerBlockEntity entity) {
+        boolean isPowered = entity.isTriggered(state);
         if (!level.isClientSide) {
             if (entity.triggeredCooldown > 0) {
                 entity.triggeredCooldown--;
             }
-            if (entity.pulseNumber > 0) {
-                if (entity.pulseCooldown <= 0) {
-                    entity.firePulse(level, blockPos);
+            if (isPowered && entity.pulseNumber > 0) {
+                if (entity.pulseCooldown < 0) {
+                    entity.firePulse(level, pos);
                     entity.pulseNumber--;
                     entity.pulseCooldown = 20;
                 } else {
@@ -42,8 +45,12 @@ public class RoseHealerBlockEntity extends BlockEntity {
         return triggeredCooldown > 0;
     }
 
+    public boolean isTriggered(BlockState state) {
+        return state.is(FOTNBlockRegistry.ROSE_HEALER.get()) && state.getValue(RoseHealerBlock.TRIGGERED);
+    }
+
     private void firePulse(Level level, BlockPos pos) {
-        AABB radius = new AABB(pos).inflate(2.5);
+        AABB radius = new AABB(pos).inflate(3);
         List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, radius);
 
         for (LivingEntity entity: entities) {
@@ -56,7 +63,6 @@ public class RoseHealerBlockEntity extends BlockEntity {
         this.triggeredCooldown = cooldown;
         this.pulseNumber = 3;
         this.pulseCooldown = 20;
-        setChanged();
     }
 
     @Override
