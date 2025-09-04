@@ -2,6 +2,7 @@ package net.plasma64.flamesofthenether.server.block.blockentity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.LivingEntity;
@@ -9,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.plasma64.flamesofthenether.client.particle.FOTNParticleRegistry;
 import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
 import net.plasma64.flamesofthenether.server.block.RoseHealerBlock;
 
@@ -23,19 +25,19 @@ public class RoseHealerBlockEntity extends BlockEntity {
         super(FOTNBlockEntityRegistry.ROSE_HEALER.get(), pPos, pBlockState);
     }
 
-    public static void tick(Level level, BlockPos pos, BlockState state, RoseHealerBlockEntity entity) {
-        boolean isPowered = entity.isTriggered(state);
-        if (!level.isClientSide) {
-            if (entity.triggeredCooldown > 0) {
-                entity.triggeredCooldown--;
+    public static void tick(Level pLevel, BlockPos pPos, BlockState pState, RoseHealerBlockEntity pEntity) {
+        boolean isPowered = pEntity.isTriggered(pState);
+        if (!pLevel.isClientSide) {
+            if (pEntity.triggeredCooldown > 0) {
+                pEntity.triggeredCooldown--;
             }
-            if (isPowered && entity.pulseNumber > 0) {
-                if (entity.pulseCooldown < 0) {
-                    entity.firePulse(level, pos);
-                    entity.pulseNumber--;
-                    entity.pulseCooldown = 20;
+            if (isPowered && pEntity.pulseNumber > 0) {
+                if (pEntity.pulseCooldown < 0) {
+                    pEntity.firePulse(pLevel, pPos);
+                    pEntity.pulseNumber--;
+                    pEntity.pulseCooldown = 20;
                 } else {
-                    entity.pulseCooldown--;
+                    pEntity.pulseCooldown--;
                 }
             }
         }
@@ -56,7 +58,8 @@ public class RoseHealerBlockEntity extends BlockEntity {
         for (LivingEntity entity: entities) {
             entity.heal(6);
         }
-        level.playSound(null, pos, SoundEvents.WARDEN_HEARTBEAT, SoundSource.BLOCKS, 1.0f, 1.5f);
+        level.playSound(null, pos, SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.BLOCKS, 1.0f, 1.5f);
+        ((ServerLevel) level).sendParticles(FOTNParticleRegistry.ROSE_HEALER.get(), pos.getX() + 0.5, pos.getY() + 0.01, pos.getZ() + 0.5, 1, 0, 0, 0, 0);
     }
 
     public void setTriggeredCooldown(int cooldown) {

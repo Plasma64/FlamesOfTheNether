@@ -1,7 +1,9 @@
 package net.plasma64.flamesofthenether;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.particle.FlameParticle;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -11,6 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.plasma64.flamesofthenether.client.particle.FOTNParticleRegistry;
+import net.plasma64.flamesofthenether.client.particle.RoseHealerParticle;
 import net.plasma64.flamesofthenether.misc.FOTNCreativeTabRegistry;
 import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
 import net.plasma64.flamesofthenether.server.block.blockentity.FOTNBlockEntityRegistry;
@@ -29,6 +33,7 @@ public class FlamesOfTheNether {
         FOTNCreativeTabRegistry.register(modEventBus);
         FOTNItemRegistry.register(modEventBus);
         FOTNBlockRegistry.register(modEventBus);
+        FOTNParticleRegistry.register(modEventBus);
         ModEffects.register(modEventBus);
         FOTNBlockEntityRegistry.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
@@ -57,6 +62,11 @@ public class FlamesOfTheNether {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
 
+        }
+
+        @SubscribeEvent
+        public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
+            event.registerSpriteSet(FOTNParticleRegistry.ROSE_HEALER.get(), RoseHealerParticle.Provider::new);
         }
     }
 }
