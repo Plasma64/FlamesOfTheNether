@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "flamesofthenether:block/tainted_nether_brick_slab"
+    },
+    "type=double": {
+      "model": "flamesofthenether:block/tainted_nether_bricks"
+    },
+    "type=top": {
+      "model": "flamesofthenether:block/tainted_nether_brick_slab_top"
+    }
+  }
+}

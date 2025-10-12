@@ -2,6 +2,10 @@ package net.plasma64.flamesofthenether.server.block.blockentity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.Connection;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -11,8 +15,10 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 import net.plasma64.flamesofthenether.client.particle.FOTNParticleRegistry;
+import net.plasma64.flamesofthenether.misc.FOTNSoundRegistry;
 import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
 import net.plasma64.flamesofthenether.server.block.RoseHealerBlock;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -58,7 +64,7 @@ public class RoseHealerBlockEntity extends BlockEntity {
         for (LivingEntity entity: entities) {
             entity.heal(6);
         }
-        level.playSound(null, pos, SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.BLOCKS, 1.0f, 1.5f);
+        level.playSound(null, pos, FOTNSoundRegistry.ROSE_HEALER_PULSE.get(), SoundSource.BLOCKS, 1.0f, 1.5f);
         ((ServerLevel) level).sendParticles(FOTNParticleRegistry.ROSE_HEALER.get(), pos.getX() + 0.5, pos.getY() + 0.01, pos.getZ() + 0.5, 1, 0, 0, 0, 0);
     }
 

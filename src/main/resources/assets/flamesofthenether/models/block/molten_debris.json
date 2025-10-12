@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "flamesofthenether:block/molten_debris_top",
+    "side": "flamesofthenether:block/molten_debris_side"
+  }
+}

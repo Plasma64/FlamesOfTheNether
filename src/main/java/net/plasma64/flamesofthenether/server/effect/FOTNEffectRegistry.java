@@ -8,11 +8,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.plasma64.flamesofthenether.FlamesOfTheNether;
 
-public class ModEffects {
+public class FOTNEffectRegistry {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS =
             DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, FlamesOfTheNether.MODID);
 
-    public static final RegistryObject<MobEffect> ROSESBLESSING = MOB_EFFECTS.register("roses_blessing", () -> new RosesBlessingEffect(MobEffectCategory.BENEFICIAL, 0));
+    public static final RegistryObject<MobEffect> ROSES_BLESSING = MOB_EFFECTS.register("roses_blessing",
+            () -> new RosesBlessingEffect(MobEffectCategory.BENEFICIAL, 0xf06cf1));
 
     public static void register (IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

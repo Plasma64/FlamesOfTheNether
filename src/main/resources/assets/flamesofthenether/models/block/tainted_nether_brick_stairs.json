@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/tainted_nether_bricks",
+    "side": "flamesofthenether:block/tainted_nether_bricks",
+    "top": "flamesofthenether:block/tainted_nether_bricks"
+  }
+}

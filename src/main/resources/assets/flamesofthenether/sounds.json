@@ -1,0 +1,55 @@
+{
+  "molten_debris_step": {
+    "sounds": [
+      "flamesofthenether:block/molten_debris/molten_debris_hit_1",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_2",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_3",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_4"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_step"
+  },
+  "molten_debris_place": {
+    "sounds": [
+      "flamesofthenether:block/molten_debris/molten_debris_break_1",
+      "flamesofthenether:block/molten_debris/molten_debris_break_2",
+      "flamesofthenether:block/molten_debris/molten_debris_break_3",
+      "flamesofthenether:block/molten_debris/molten_debris_break_4",
+      "flamesofthenether:block/molten_debris/molten_debris_break_5"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_place"
+  },
+  "molten_debris_break": {
+    "sounds": [
+      "flamesofthenether:block/molten_debris/molten_debris_break_1",
+      "flamesofthenether:block/molten_debris/molten_debris_break_2",
+      "flamesofthenether:block/molten_debris/molten_debris_break_3",
+      "flamesofthenether:block/molten_debris/molten_debris_break_4",
+      "flamesofthenether:block/molten_debris/molten_debris_break_5"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_break"
+  },
+  "molten_debris_breaking": {
+    "sounds": [
+      "flamesofthenether:block/molten_debris/molten_debris_hit_1",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_2",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_3",
+      "flamesofthenether:block/molten_debris/molten_debris_hit_4"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_breaking"
+  },
+  "molten_debris_spawn": {
+    "sounds": [
+      "flamesofthenether:entity/molten_debris/molten_debris_spawn_1"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_spawn"
+  },
+  "rose_healer_pulse": {
+    "sounds": [
+      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_1",
+      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_2",
+      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_3",
+      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_4"
+    ],
+    "subtitle": "flamesofthenether.sound.subtitle.rose_healer_pulse"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "flamesofthenether:block/gold_lantern"
+    },
+    "hanging=true": {
+      "model": "flamesofthenether:block/gold_lantern_hanging"
+    }
+  }
+}

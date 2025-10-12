@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "flamesofthenether:tainted_nether_brick_wall",
+    "flamesofthenether:gilded_blackstone_wall",
+    "flamesofthenether:gilded_polished_blackstone_wall",
+    "flamesofthenether:gilded_polished_blackstone_brick_wall"
+  ]
+}

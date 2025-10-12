@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "flamesofthenether:rose_quartz_stairs",
+    "flamesofthenether:smooth_rose_quartz_stairs",
+    "flamesofthenether:tainted_nether_brick_stairs",
+    "flamesofthenether:gilded_blackstone_stairs",
+    "flamesofthenether:gilded_polished_blackstone_stairs",
+    "flamesofthenether:gilded_polished_blackstone_brick_stairs"
+  ]
+}

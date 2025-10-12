@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "flamesofthenether:block/cracked_tainted_nether_bricks"
+  }
+}

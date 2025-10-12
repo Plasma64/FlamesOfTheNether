@@ -1,10 +1,15 @@
 package net.plasma64.flamesofthenether;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.particle.FlameParticle;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionUtils;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,10 +21,14 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.plasma64.flamesofthenether.client.particle.FOTNParticleRegistry;
 import net.plasma64.flamesofthenether.client.particle.RoseHealerParticle;
 import net.plasma64.flamesofthenether.misc.FOTNCreativeTabRegistry;
+import net.plasma64.flamesofthenether.misc.FOTNSoundRegistry;
 import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
 import net.plasma64.flamesofthenether.server.block.blockentity.FOTNBlockEntityRegistry;
-import net.plasma64.flamesofthenether.server.effect.ModEffects;
+import net.plasma64.flamesofthenether.server.effect.FOTNEffectRegistry;
+import net.plasma64.flamesofthenether.server.entity.FOTNEntityRegistry;
+import net.plasma64.flamesofthenether.server.event.FOTNCommonEvents;
 import net.plasma64.flamesofthenether.server.item.FOTNItemRegistry;
+import net.plasma64.flamesofthenether.server.potion.FOTNPotionRegistry;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -34,15 +43,23 @@ public class FlamesOfTheNether {
         FOTNItemRegistry.register(modEventBus);
         FOTNBlockRegistry.register(modEventBus);
         FOTNParticleRegistry.register(modEventBus);
-        ModEffects.register(modEventBus);
+        FOTNSoundRegistry.register(modEventBus);
+        FOTNEffectRegistry.register(modEventBus);
         FOTNBlockEntityRegistry.register(modEventBus);
+        FOTNEntityRegistry.register(modEventBus);
+        FOTNPotionRegistry.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(FOTNCommonEvents.class);
         modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
 
+            BrewingRecipeRegistry.addRecipe(Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.REGENERATION)), Ingredient.of(FOTNItemRegistry.ROSE_QUARTZ.get()), PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.ROSES_BLESSING_POTION.get()));
+            BrewingRecipeRegistry.addRecipe(Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.ROSES_BLESSING_POTION.get())), Ingredient.of(Items.REDSTONE), PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.LONG_ROSES_BLESSING_POTION.get()));
+        });
     }
 
     // Add the example block item to the building blocks tab

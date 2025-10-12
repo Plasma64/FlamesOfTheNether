@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "flamesofthenether:block/tainted_nether_bricks"
+  }
+}

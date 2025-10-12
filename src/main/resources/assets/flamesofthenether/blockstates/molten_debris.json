@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "burning=false": {
+      "model": "flamesofthenether:block/molten_debris_cooled"
+    },
+    "burning=true": {
+      "model": "flamesofthenether:block/molten_debris"
+    }
+  }
+}
