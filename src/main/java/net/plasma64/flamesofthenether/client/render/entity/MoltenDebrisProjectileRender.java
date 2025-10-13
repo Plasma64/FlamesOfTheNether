@@ -10,7 +10,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.plasma64.flamesofthenether.FlamesOfTheNether;
 import net.plasma64.flamesofthenether.client.entity.FOTNEntityModelLayers;
-import net.plasma64.flamesofthenether.client.model.MoltenDebrisProjectileModel;
+import net.plasma64.flamesofthenether.client.model.entity.MoltenDebrisProjectileModel;
 import net.plasma64.flamesofthenether.server.entity.item.MoltenDebrisProjectile;
 
 

@@ -16,7 +16,7 @@ public class FOTNItemRegistry {
     public static final RegistryObject<Item> ROSE_QUARTZ = ITEMS.register("rose_quartz",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SLAG_CANNON = ITEMS.register("slag_cannon",
-            () -> new SlagCannonItem(new Item.Properties().fireResistant().durability(2031)));
+            () -> new SlagCannonItem(new Item.Properties().stacksTo(1).fireResistant().durability(2031)));
 
     public static void register (IEventBus eventBus) {
         ITEMS.register(eventBus);

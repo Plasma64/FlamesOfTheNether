@@ -6,7 +6,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.plasma64.flamesofthenether.FlamesOfTheNether;
 import net.plasma64.flamesofthenether.client.entity.FOTNEntityModelLayers;
-import net.plasma64.flamesofthenether.client.model.MoltenDebrisProjectileModel;
+import net.plasma64.flamesofthenether.client.model.entity.MoltenDebrisProjectileModel;
 import net.plasma64.flamesofthenether.client.render.entity.MoltenDebrisProjectileRender;
 import net.plasma64.flamesofthenether.server.entity.FOTNEntityRegistry;
 
