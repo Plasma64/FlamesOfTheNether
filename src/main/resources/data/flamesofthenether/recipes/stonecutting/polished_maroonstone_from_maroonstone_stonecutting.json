@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "flamesofthenether:maroonstone"
+  },
+  "result": "flamesofthenether:polished_maroonstone"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "flamesofthenether:block/smooth_rose_quartz"
+  }
+}

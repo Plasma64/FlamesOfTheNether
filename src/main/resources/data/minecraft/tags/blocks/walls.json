@@ -2,8 +2,19 @@
   "replace": false,
   "values": [
     "flamesofthenether:tainted_nether_brick_wall",
+    "flamesofthenether:rose_quartz_wall",
+    "flamesofthenether:smooth_rose_quartz_wall",
+    "flamesofthenether:rose_quartz_brick_wall",
+    "flamesofthenether:checkered_polished_blackstone_tiles_wall",
     "flamesofthenether:gilded_blackstone_wall",
-    "flamesofthenether:gilded_polished_blackstone_wall",
-    "flamesofthenether:gilded_polished_blackstone_brick_wall"
+    "flamesofthenether:polished_gilded_blackstone_wall",
+    "flamesofthenether:checkered_polished_gilded_blackstone_tiles_wall",
+    "flamesofthenether:polished_gilded_blackstone_brick_wall",
+    "flamesofthenether:maroonstone_wall",
+    "flamesofthenether:polished_maroonstone_wall",
+    "flamesofthenether:polished_maroonstone_brick_wall",
+    "flamesofthenether:quartz_wall",
+    "flamesofthenether:smooth_quartz_wall",
+    "flamesofthenether:quartz_brick_wall"
   ]
 }

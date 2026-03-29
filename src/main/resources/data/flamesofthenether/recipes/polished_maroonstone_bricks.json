@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "flamesofthenether:polished_maroonstone"
+    }
+  },
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "result": {
+    "count": 4,
+    "item": "flamesofthenether:polished_maroonstone_bricks"
+  },
+  "show_notification": true
+}

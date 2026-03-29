@@ -1,47 +1,117 @@
 {
-  "item.flamesofthenether.tainted_nether_brick": "Tainted Nether Brick",
-  "item.flamesofthenether.rose_quartz": "Rose Quartz",
-  "item.flamesofthenether.slag_cannon": "Slag Cannon",
 
   "block.flamesofthenether.tainted_netherrack": "Tainted Netherrack",
   "block.flamesofthenether.tainted_nether_bricks": "Tainted Nether Bricks",
   "block.flamesofthenether.cracked_tainted_nether_bricks": "Cracked Tainted Nether Bricks",
   "block.flamesofthenether.chiseled_tainted_nether_bricks": "Chiseled Tainted Nether Bricks",
-  "block.flamesofthenether.tainted_nether_brick_slab": "Tainted Nether Brick Slab",
   "block.flamesofthenether.tainted_nether_brick_stairs": "Tainted Nether Brick Stairs",
+  "block.flamesofthenether.tainted_nether_brick_slab": "Tainted Nether Brick Slab",
   "block.flamesofthenether.tainted_nether_brick_fence": "Tainted Nether Brick Fence",
   "block.flamesofthenether.tainted_nether_brick_wall": "Tainted Nether Brick Wall",
-  "block.flamesofthenether.gilded_blackstone_slab": "Gilded Blackstone Slab",
-  "block.flamesofthenether.gilded_blackstone_stairs": "Gilded Blackstone Stairs",
-  "block.flamesofthenether.gilded_blackstone_wall": "Gilded Blackstone Wall",
-  "block.flamesofthenether.gilded_polished_blackstone": "Gilded Polished Blackstone",
-  "block.flamesofthenether.gilded_polished_blackstone_slab": "Gilded Polished Blackstone Slab",
-  "block.flamesofthenether.gilded_polished_blackstone_stairs": "Gilded Polished Blackstone Stairs",
-  "block.flamesofthenether.gilded_polished_blackstone_wall": "Gilded Polished Blackstone Wall",
-  "block.flamesofthenether.gilded_polished_blackstone_bricks": "Gilded Polished Blackstone Bricks",
-  "block.flamesofthenether.gilded_cracked_polished_blackstone_bricks": "Gilded Cracked Polished Blackstone Bricks",
-  "block.flamesofthenether.gilded_chiseled_polished_blackstone": "Gilded Chiseled Polished Blackstone",
-  "block.flamesofthenether.gilded_polished_blackstone_brick_slab": "Gilded Polished Blackstone Brick Slab",
-  "block.flamesofthenether.gilded_polished_blackstone_brick_stairs": "Gilded Polished Blackstone Brick Stair",
-  "block.flamesofthenether.gilded_polished_blackstone_brick_wall": "Gilded Polished Blackstone Brick Wall",
-  "block.flamesofthenether.gold_chain": "Gold Chain",
-  "block.flamesofthenether.gold_bars": "Gold Bars",
-  "block.flamesofthenether.gold_lantern": "Gold Lantern",
+
+  "block.flamesofthenether.polished_blackstone_pillar": "Polished Blackstone Pillar",
+  "block.flamesofthenether.checkered_polished_blackstone_tiles": "Checkered Polished Blackstone Tiles",
+  "block.flamesofthenether.cracked_checkered_polished_blackstone_tiles": "Cracked Checkered Polished Blackstone Tiles",
+  "block.flamesofthenether.chiseled_checkered_polished_blackstone_tiles": "Chiseled Checkered Polished Blackstone Tiles",
+  "block.flamesofthenether.checkered_polished_blackstone_tiles_stairs": "Checkered Polished Blackstone Tiles Stairs",
+  "block.flamesofthenether.checkered_polished_blackstone_tiles_slab": "Checkered Polished Blackstone Tiles Slab",
+  "block.flamesofthenether.checkered_polished_blackstone_tiles_wall": "Checkered Polished Blackstone Tiles Wall",
+
+  "block.flamesofthenether.polished_gilded_blackstone": "Polished Gilded Blackstone",
+  "block.flamesofthenether.checkered_polished_gilded_blackstone_tiles": "Checkered Polished Gilded Blackstone Tiles",
+  "block.flamesofthenether.cracked_checkered_polished_gilded_blackstone_tiles": "Cracked Checkered Gilded Polished Blackstone Tiles",
+  "block.flamesofthenether.chiseled_checkered_polished_gilded_blackstone_tiles": "Chiseled Checkered Gilded Polished Blackstone Tiles",
+  "block.flamesofthenether.checkered_polished_gilded_blackstone_tiles_stairs": "Checkered Polished Gilded Blackstone Tiles Stairs",
+  "block.flamesofthenether.checkered_polished_gilded_blackstone_tiles_slab": "Checkered Polished Gilded Blackstone Tiles Slab",
+  "block.flamesofthenether.checkered_polished_gilded_blackstone_tiles_wall": "Checkered Polished Gilded Blackstone Tiles Wall",
+  "block.flamesofthenether.polished_gilded_blackstone_slab": "Polished Gilded Blackstone Slab",
+  "block.flamesofthenether.polished_gilded_blackstone_stairs": "Polished Gilded Blackstone Stairs",
+  "block.flamesofthenether.polished_gilded_blackstone_wall": "Polished Gilded Blackstone Wall",
+  "block.flamesofthenether.polished_gilded_blackstone_bricks": "Polished Gilded Blackstone Bricks",
+  "block.flamesofthenether.cracked_polished_gilded_blackstone_bricks": "Cracked Polished Gilded Blackstone Bricks",
+  "block.flamesofthenether.chiseled_polished_gilded_blackstone": "Chiseled Polished Gilded Blackstone",
+  "block.flamesofthenether.polished_gilded_blackstone_pillar": "Polished Gilded Blackstone Pillar",
+  "block.flamesofthenether.polished_gilded_blackstone_brick_slab": "Gilded Polished Blackstone Brick Slab",
+  "block.flamesofthenether.polished_gilded_blackstone_brick_stairs": "Gilded Polished Blackstone Brick Stair",
+  "block.flamesofthenether.polished_gilded_blackstone_brick_wall": "Gilded Polished Blackstone Brick Wall",
+
+  "block.flamesofthenether.cracked_quartz_bricks": "Cracked Quartz Bricks",
+
+  "block.flamesofthenether.quartz_wall": "Quartz Wall",
+  "block.flamesofthenether.smooth_quartz_wall": "Smooth Quartz Wall",
+  "block.flamesofthenether.quartz_brick_stairs": "Quartz Brick Stairs",
+  "block.flamesofthenether.quartz_brick_slab": "Quartz Brick Slab",
+  "block.flamesofthenether.quartz_brick_wall": "Quartz Brick Wall",
+
+  "block.flamesofthenether.tainted_nether_rose_quartz_ore": "Tainted Nether Rose Quartz Ore",
+
   "block.flamesofthenether.rose_quartz_block": "Block Of Rose Quartz",
-  "block.flamesofthenether.rose_quartz_slab": "Rose Quartz Slab",
   "block.flamesofthenether.rose_quartz_stairs": "Rose Quartz Stairs",
+  "block.flamesofthenether.rose_quartz_slab": "Rose Quartz Slab",
+  "block.flamesofthenether.rose_quartz_wall": "Rose Quartz Wall",
+
   "block.flamesofthenether.smooth_rose_quartz": "Smooth Rose Quartz Block",
-  "block.flamesofthenether.smooth_rose_quartz_slab": "Smooth Rose Quartz Slab",
   "block.flamesofthenether.smooth_rose_quartz_stairs": "Smooth Rose Quartz Stairs",
+  "block.flamesofthenether.smooth_rose_quartz_slab": "Smooth Rose Quartz Slab",
+  "block.flamesofthenether.smooth_rose_quartz_wall": "Smooth Rose Quartz Wall",
+
   "block.flamesofthenether.rose_quartz_bricks": "Rose Quartz Bricks",
+  "block.flamesofthenether.cracked_rose_quartz_bricks": "Cracked Rose Quartz Bricks",
   "block.flamesofthenether.chiseled_rose_quartz_block": "Chiseled Rose Quartz Block",
   "block.flamesofthenether.rose_quartz_pillar": "Rose Quartz Pillar",
+  "block.flamesofthenether.rose_quartz_brick_stairs": "Rose Quartz Brick Stairs",
+  "block.flamesofthenether.rose_quartz_brick_slab": "Rose Quartz Brick Slab",
+  "block.flamesofthenether.rose_quartz_brick_wall": "Rose Quartz Brick Wall",
+
   "block.flamesofthenether.rose_healer": "Rose Healer",
+
   "block.flamesofthenether.molten_debris": "Molten Debris",
+
+  "block.flamesofthenether.maroonstone": "Maroonstone",
+  "block.flamesofthenether.maroonstone_stairs": "Maroonstone Stairs",
+  "block.flamesofthenether.maroonstone_slab": "Maroonstone Slab",
+  "block.flamesofthenether.maroonstone_wall": "Maroonstone Wall",
+
+  "block.flamesofthenether.polished_maroonstone": "Polished Maroonstone",
+  "block.flamesofthenether.polished_maroonstone_stairs": "Polished Maroonstone Stairs",
+  "block.flamesofthenether.polished_maroonstone_slab": "Polished Maroonstone Slab",
+  "block.flamesofthenether.polished_maroonstone_wall": "Polished Maroonstone Wall",
+
+  "block.flamesofthenether.polished_maroonstone_bricks": "Polished Maroonstone Bricks",
+  "block.flamesofthenether.cracked_polished_maroonstone_bricks": "Cracked Polished Maroonstone Bricks",
+  "block.flamesofthenether.chiseled_polished_maroonstone": "Chiseled Polished Maroonstone",
+  "block.flamesofthenether.polished_maroonstone_pillar": "Polished Maroonstone Pillar",
+  "block.flamesofthenether.polished_maroonstone_brick_stairs": "Polished Maroonstone Brick Stairs",
+  "block.flamesofthenether.polished_maroonstone_brick_slab": "Polished Maroonstone Brick Slab",
+  "block.flamesofthenether.polished_maroonstone_brick_wall": "Polished Maroonstone Brick Wall",
+
+  "block.flamesofthenether.gold_bars": "Gold Bars",
+
+  "block.flamesofthenether.gold_chain": "Gold Chain",
+
+  "block.flamesofthenether.gold_lantern": "Gold Lantern",
+
+  "block.flamesofthenether.soul_roots": "Soul Roots",
+
+  "block.flamesofthenether.soul_pepper_bush": "Soul Pepper Bush",
+
+  "block.flamesofthenether.crimson_blast_fungus": "Crimson Blast Fungus",
+
+  "block.flamesofthenether.warped_blast_fungus": "Warped Blast Fungus",
+
+  "block.flamesofthenether.crimson_blast_fungus_block": "Crimson Blast Fungus Block",
+
+  "block.flamesofthenether.warped_blast_fungus_block": "Warped Blast Fungus Block",
+
+  "block.flamesofthenether.ash": "Ash",
+
+  "block.flamesofthenether.ash_block": "Ash Block",
 
   "creativetab.molten_barrens": "Molten Barrens",
 
   "effect.flamesofthenether.roses_blessing": "Rose's Blessing",
+  "effect.flamesofthenether.soul_siphon": "Soul Siphon",
+  "effect.flamesofthenether.swift_soul": "Swift Soul",
 
   "item.minecraft.potion.effect.roses_blessing_potion": "Potion of Rose's Blessing",
   "item.minecraft.potion.effect.long_roses_blessing_potion": "Potion of Rose's Blessing",
@@ -52,13 +122,28 @@
   "item.minecraft.tipped_arrow.effect.roses_blessing_potion": "Arrow of Rose's Blessing",
   "item.minecraft.tipped_arrow.effect.long_roses_blessing_potion": "Arrow of Rose's Blessing",
 
+  "item.flamesofthenether.tainted_nether_brick": "Tainted Nether Brick",
+
+  "item.flamesofthenether.rose_quartz": "Rose Quartz",
+
+  "item.flamesofthenether.magma_cannon": "Magma Cannon",
+
+  "item.flamesofthenether.soul_pepper": "Soul Pepper",
+  "item.flamesofthenether.soul_pepper_seeds": "Soul Pepper Seeds",
+  "item.flamesofthenether.soul_pepper_stew": "Soul Pepper Stew",
+
+  "item.flamesofthenether.ashes": "Ashes",
+
   "entity.flamesofthenether.molten_debris_projectile": "Molten Debris",
 
-  "flamesofthenether.sound.subtitle.molten_debris_step": "Footsteps",
-  "flamesofthenether.sound.subtitle.molten_debris_place": "Block placed",
-  "flamesofthenether.sound.subtitle.molten_debris_break": "Block broken",
-  "flamesofthenether.sound.subtitle.molten_debris_breaking": "Block breaking",
+  "subtitles.block.flamesofthenether.soul_pepper_bush.pick_peppers": "Peppers pop",
+  "subtitles.block.flamesofthenether.soul_pepper_bush.call": "Soul Pepper Bush calls out",
 
-  "flamesofthenether.sound.subtitle.molten_debris_spawn": "Molten Debris spawned",
-  "flamesofthenether.sound.subtitle.rose_healer_pulse": "Rose Healer pulsed"
+  "subtitles.block.flamesofthenether.rose_healer.pulse": "Rose Healer pulsed",
+
+  "subtitles.entity.flamesofthenether.molten_debris.spawn": "Molten Debris spawned",
+
+  "subtitles.effect.flamesofthenether.soul_siphon_heal": "Soul Siphon healed",
+
+  "item.flamesofthenether.pocket_ashes.tooltip": "Ammo: %s / %s"
 }

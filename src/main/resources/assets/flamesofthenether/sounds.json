@@ -1,55 +1,158 @@
 {
-  "molten_debris_step": {
+  "block.molten_debris.break": {
     "sounds": [
-      "flamesofthenether:block/molten_debris/molten_debris_hit_1",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_2",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_3",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_4"
+      "flamesofthenether:block/molten_debris/molten_debris_break1",
+      "flamesofthenether:block/molten_debris/molten_debris_break2",
+      "flamesofthenether:block/molten_debris/molten_debris_break3",
+      "flamesofthenether:block/molten_debris/molten_debris_break4",
+      "flamesofthenether:block/molten_debris/molten_debris_break5"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_step"
+    "subtitle": "subtitles.block.generic.break"
   },
-  "molten_debris_place": {
+  "block.molten_debris.step": {
     "sounds": [
-      "flamesofthenether:block/molten_debris/molten_debris_break_1",
-      "flamesofthenether:block/molten_debris/molten_debris_break_2",
-      "flamesofthenether:block/molten_debris/molten_debris_break_3",
-      "flamesofthenether:block/molten_debris/molten_debris_break_4",
-      "flamesofthenether:block/molten_debris/molten_debris_break_5"
+      "flamesofthenether:block/molten_debris/molten_debris_hit1",
+      "flamesofthenether:block/molten_debris/molten_debris_hit2",
+      "flamesofthenether:block/molten_debris/molten_debris_hit3",
+      "flamesofthenether:block/molten_debris/molten_debris_hit4"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_place"
+    "subtitle": "subtitles.block.generic.footsteps"
   },
-  "molten_debris_break": {
+  "block.molten_debris.place": {
     "sounds": [
-      "flamesofthenether:block/molten_debris/molten_debris_break_1",
-      "flamesofthenether:block/molten_debris/molten_debris_break_2",
-      "flamesofthenether:block/molten_debris/molten_debris_break_3",
-      "flamesofthenether:block/molten_debris/molten_debris_break_4",
-      "flamesofthenether:block/molten_debris/molten_debris_break_5"
+      "flamesofthenether:block/molten_debris/molten_debris_break1",
+      "flamesofthenether:block/molten_debris/molten_debris_break2",
+      "flamesofthenether:block/molten_debris/molten_debris_break3",
+      "flamesofthenether:block/molten_debris/molten_debris_break4",
+      "flamesofthenether:block/molten_debris/molten_debris_break5"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_break"
+    "subtitle": "subtitles.block.generic.place"
   },
-  "molten_debris_breaking": {
+  "block.molten_debris.hit": {
     "sounds": [
-      "flamesofthenether:block/molten_debris/molten_debris_hit_1",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_2",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_3",
-      "flamesofthenether:block/molten_debris/molten_debris_hit_4"
+      "flamesofthenether:block/molten_debris/molten_debris_hit1",
+      "flamesofthenether:block/molten_debris/molten_debris_hit2",
+      "flamesofthenether:block/molten_debris/molten_debris_hit3",
+      "flamesofthenether:block/molten_debris/molten_debris_hit4"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_breaking"
+    "subtitle": "subtitles.block.generic.hit"
   },
-  "molten_debris_spawn": {
+  "block.molten_debris.fall": {
     "sounds": [
-      "flamesofthenether:entity/molten_debris/molten_debris_spawn_1"
+      "flamesofthenether:block/molten_debris/molten_debris_hit1",
+      "flamesofthenether:block/molten_debris/molten_debris_hit2",
+      "flamesofthenether:block/molten_debris/molten_debris_hit3",
+      "flamesofthenether:block/molten_debris/molten_debris_hit4"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.molten_debris_spawn"
+    "subtitle": "subtitles.block.generic.fall"
   },
-  "rose_healer_pulse": {
+  "block.rose_healer.pulse": {
     "sounds": [
-      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_1",
-      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_2",
-      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_3",
-      "flamesofthenether:block/blockentity/rose_healer/rose_healer_pulse_4"
+      "flamesofthenether:block/rose_healer/rose_healer_pulse1",
+      "flamesofthenether:block/rose_healer/rose_healer_pulse2",
+      "flamesofthenether:block/rose_healer/rose_healer_pulse3",
+      "flamesofthenether:block/rose_healer/rose_healer_pulse4"
     ],
-    "subtitle": "flamesofthenether.sound.subtitle.rose_healer_pulse"
+    "subtitle": "subtitles.block.flamesofthenether.rose_healer.pulse"
+  },
+  "block.soul_pepper_bush.break": {
+    "sounds": [
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_break1",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_break2",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_break3",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_break4"
+    ],
+    "subtitle": "subtitles.block.flamesofthenether.soul_pepper_bush.break"
+  },
+  "block.soul_pepper_bush.place": {
+    "sounds": [
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place1",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place2",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place3",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place4",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place5",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_place6"
+    ],
+    "subtitle": "subtitles.block.flamesofthenether.soul_pepper_bush.place"
+  },
+  "block.soul_pepper_bush.pick_peppers": {
+    "sounds": [
+      "flamesofthenether:block/soul_pepper_bush/soul_peppers_pick1",
+      "flamesofthenether:block/soul_pepper_bush/soul_peppers_pick2"
+    ],
+    "subtitle": "subtitles.block.flamesofthenether.soul_pepper_bush.pick_peppers"
+  },
+  "block.soul_pepper_bush.call": {
+    "sounds": [
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_call1",
+      "flamesofthenether:block/soul_pepper_bush/soul_pepper_bush_call2"
+    ],
+    "subtitle": "subtitles.block.flamesofthenether.soul_pepper_bush.call"
+  },
+  "block.ash.break": {
+    "sounds": [
+      "flamesofthenether:block/ash/ash_dig1",
+      "flamesofthenether:block/ash/ash_dig2",
+      "flamesofthenether:block/ash/ash_dig3",
+      "flamesofthenether:block/ash/ash_dig4"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.ash.step": {
+    "sounds": [
+      "flamesofthenether:block/ash/ash_dig1",
+      "flamesofthenether:block/ash/ash_dig2",
+      "flamesofthenether:block/ash/ash_dig3",
+      "flamesofthenether:block/ash/ash_dig4"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.ash.place": {
+    "sounds": [
+      "flamesofthenether:block/ash/ash_dig1",
+      "flamesofthenether:block/ash/ash_dig2",
+      "flamesofthenether:block/ash/ash_dig3",
+      "flamesofthenether:block/ash/ash_dig4"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.ash.hit": {
+    "sounds": [
+      "flamesofthenether:block/ash/ash_dig1",
+      "flamesofthenether:block/ash/ash_dig2",
+      "flamesofthenether:block/ash/ash_dig3",
+      "flamesofthenether:block/ash/ash_dig4"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.ash.fall": {
+    "sounds": [
+      "flamesofthenether:block/ash/ash_dig1",
+      "flamesofthenether:block/ash/ash_dig2",
+      "flamesofthenether:block/ash/ash_dig3",
+      "flamesofthenether:block/ash/ash_dig4"
+    ],
+    "subtitle": "subtitles.block.generic.fall"
+  },
+  "effect.soul_siphon_heal": {
+    "sounds": [
+      "flamesofthenether:effect/soul_siphon/soul_siphon_heal1",
+      "flamesofthenether:effect/soul_siphon/soul_siphon_heal2",
+      "flamesofthenether:effect/soul_siphon/soul_siphon_heal3",
+      "flamesofthenether:effect/soul_siphon/soul_siphon_heal4"
+    ],
+    "subtitle": "subtitles.effect.flamesofthenether.soul_siphon.heal"
+  },
+  "item.ashes.throw": {
+    "sounds": [
+      "flamesofthenether:item/ashes/throw1"
+    ],
+    "subtitle": "subtitles.item.flamesofthenether.ashes.throw"
+  },
+  "entity.molten_debris.spawn": {
+    "sounds": [
+      "flamesofthenether:entity/molten_debris/molten_debris_spawn1"
+    ],
+    "subtitle": "subtitles.entity.flamesofthenether.molten_debris.spawn"
   }
 }

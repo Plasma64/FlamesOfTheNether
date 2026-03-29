@@ -56,11 +56,12 @@ public class MoltenDebrisBlock extends Block {
         if (isHeated && !pState.getValue(BURNING)) {
             pLevel.setBlock(pPos, pState.setValue(BURNING, true), 3);
             pLevel.playSound(null, pPos, SoundEvents.FIRECHARGE_USE, SoundSource.BLOCKS, 1.0F, 1.0F);
-        } else if (isCooled && pState.getValue(BURNING)) {
-            pLevel.setBlock(pPos, pState.setValue(BURNING, false), 3);
-            pLevel.playSound(null, pPos, SoundEvents.LAVA_EXTINGUISH, SoundSource.BLOCKS, 1.0F, 1.0F);
+        } else {
+            if (isCooled && pState.getValue(BURNING)) {
+                pLevel.setBlock(pPos, pState.setValue(BURNING, false), 3);
+                pLevel.playSound(null, pPos, SoundEvents.LAVA_EXTINGUISH, SoundSource.BLOCKS, 1.0F, 1.0F);
+            }
         }
-
     }
 
     private boolean isNearTemperatureBlock(BlockGetter level, BlockPos pos, TagKey<Block> tagKey) {

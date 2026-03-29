@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "flamesofthenether:rose_quartz_block"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "#N#",
+    "#X#",
+    "#R#"
+  ],
+  "result": {
+    "item": "flamesofthenether:rose_healer"
+  },
+  "show_notification": true
+}

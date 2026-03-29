@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "T": {
+      "item": "flamesofthenether:tainted_netherrack"
+    },
+    "W": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "pattern": [
+    "TW",
+    "WT"
+  ],
+  "result": {
+    "count": 2,
+    "item": "minecraft:netherrack"
+  },
+  "show_notification": true
+}

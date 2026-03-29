@@ -28,17 +28,15 @@ public class RoseHealerBlock extends BaseEntityBlock {
     @Override
     public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pNeighborBlock, BlockPos pNeighborPos, boolean pMovedByPiston) {
         if (!pLevel.isClientSide) {
-            boolean flag = pState.getValue(TRIGGERED);
-            boolean flag1 = pLevel.hasNeighborSignal(pPos);
+            boolean wasTriggered = pState.getValue(TRIGGERED);
+            boolean powered = pLevel.hasNeighborSignal(pPos);
 
-            if (flag != flag1) {
-                pLevel.setBlock(pPos, pState.setValue(TRIGGERED, flag1), 3);
+            if (powered != wasTriggered) {
+                pLevel.setBlock(pPos, pState.setValue(TRIGGERED, powered), 3);
             }
-            BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if (flag && entity instanceof RoseHealerBlockEntity roseHealerBlockEntity) {
-                if (!roseHealerBlockEntity.isOnCooldown()) {
-                    roseHealerBlockEntity.setTriggeredCooldown(200);
-                }
+
+            if (powered) {
+                pLevel.getBlockEntity(pPos, FOTNBlockEntityRegistry.ROSE_HEALER.get()).ifPresent(RoseHealerBlockEntity::onRedstoneTriggered);
             }
         }
     }

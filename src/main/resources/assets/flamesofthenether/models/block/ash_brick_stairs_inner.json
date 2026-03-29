@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/ash_bricks",
+    "side": "flamesofthenether:block/ash_bricks",
+    "top": "flamesofthenether:block/ash_bricks"
+  }
+}

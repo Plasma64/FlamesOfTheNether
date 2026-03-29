@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blast_fungus=1": {
+      "model": "flamesofthenether:block/crimson_blast_fungus"
+    },
+    "blast_fungus=2": {
+      "model": "flamesofthenether:block/two_crimson_blast_fungus"
+    },
+    "blast_fungus=3": {
+      "model": "flamesofthenether:block/three_crimson_blast_fungus"
+    },
+    "blast_fungus=4": {
+      "model": "flamesofthenether:block/four_crimson_blast_fungus"
+    }
+  }
+}

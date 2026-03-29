@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "flamesofthenether:block/soul_roots"
+    },
+    "lit=true": {
+      "model": "flamesofthenether:block/soul_roots_lit"
+    }
+  }
+}

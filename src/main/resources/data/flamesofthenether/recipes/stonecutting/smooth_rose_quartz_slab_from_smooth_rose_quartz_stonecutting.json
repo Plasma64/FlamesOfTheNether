@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "flamesofthenether:smooth_rose_quartz"
+  },
+  "result": "flamesofthenether:smooth_rose_quartz_slab"
+}

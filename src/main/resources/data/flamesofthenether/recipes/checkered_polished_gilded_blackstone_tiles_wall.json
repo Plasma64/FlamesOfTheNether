@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "flamesofthenether:checkered_polished_gilded_blackstone_tiles"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "flamesofthenether:checkered_polished_gilded_blackstone_tiles_wall"
+  },
+  "show_notification": true
+}

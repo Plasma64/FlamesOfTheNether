@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "flamesofthenether:molten_debris",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "flamesofthenether:molten_debris",
+              "properties": {
+                "burning": "true"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "flamesofthenether:molten_debris",
+              "properties": {
+                "burning": "false"
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "flamesofthenether:blocks/molten_debris"
+}

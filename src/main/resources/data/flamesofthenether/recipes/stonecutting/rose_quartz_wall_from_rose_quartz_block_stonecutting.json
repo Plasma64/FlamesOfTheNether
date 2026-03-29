@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "flamesofthenether:rose_quartz_block"
+  },
+  "result": "flamesofthenether:rose_quartz_wall"
+}

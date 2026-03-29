@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "flamesofthenether:polished_gilded_blackstone"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "flamesofthenether:polished_gilded_blackstone_pillar"
+  },
+  "show_notification": true
+}

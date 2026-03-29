@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "flamesofthenether:block/maroonstone_slab"
+    },
+    "type=double": {
+      "model": "flamesofthenether:block/maroonstone"
+    },
+    "type=top": {
+      "model": "flamesofthenether:block/maroonstone_slab_top"
+    }
+  }
+}

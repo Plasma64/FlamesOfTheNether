@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "flamesofthenether:rose_quartz_slab"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "flamesofthenether:chiseled_rose_quartz_block"
+  },
+  "show_notification": true
+}

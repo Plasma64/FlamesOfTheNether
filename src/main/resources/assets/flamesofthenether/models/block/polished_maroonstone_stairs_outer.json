@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/polished_maroonstone",
+    "side": "flamesofthenether:block/polished_maroonstone",
+    "top": "flamesofthenether:block/polished_maroonstone"
+  }
+}

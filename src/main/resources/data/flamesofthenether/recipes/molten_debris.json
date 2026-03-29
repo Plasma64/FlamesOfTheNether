@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    }
+  },
+  "pattern": [
+    "NM",
+    "MN"
+  ],
+  "result": {
+    "item": "flamesofthenether:molten_debris"
+  },
+  "show_notification": true
+}

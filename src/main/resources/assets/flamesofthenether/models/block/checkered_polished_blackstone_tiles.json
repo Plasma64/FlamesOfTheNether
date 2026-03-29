@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "flamesofthenether:block/checkered_polished_blackstone_tiles"
+  }
+}

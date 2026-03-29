@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "flamesofthenether:block/polished_gilded_blackstone_pillar_top",
+    "side": "flamesofthenether:block/polished_gilded_blackstone_pillar"
+  }
+}

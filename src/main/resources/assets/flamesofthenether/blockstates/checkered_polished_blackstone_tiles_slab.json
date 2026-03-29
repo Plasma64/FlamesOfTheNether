@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "flamesofthenether:block/checkered_polished_blackstone_tiles_slab"
+    },
+    "type=double": {
+      "model": "flamesofthenether:block/checkered_polished_blackstone_tiles"
+    },
+    "type=top": {
+      "model": "flamesofthenether:block/checkered_polished_blackstone_tiles_slab_top"
+    }
+  }
+}

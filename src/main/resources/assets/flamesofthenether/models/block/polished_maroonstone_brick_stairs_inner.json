@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/polished_maroonstone_bricks",
+    "side": "flamesofthenether:block/polished_maroonstone_bricks",
+    "top": "flamesofthenether:block/polished_maroonstone_bricks"
+  }
+}

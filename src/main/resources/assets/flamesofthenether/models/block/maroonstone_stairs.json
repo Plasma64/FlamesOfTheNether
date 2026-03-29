@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "flamesofthenether:block/maroonstone",
+    "side": "flamesofthenether:block/maroonstone",
+    "top": "flamesofthenether:block/maroonstone"
+  }
+}

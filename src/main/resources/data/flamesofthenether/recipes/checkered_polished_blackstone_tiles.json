@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "B": {
+      "item": "minecraft:polished_basalt"
+    }
+  },
+  "pattern": [
+    "PB",
+    "BP"
+  ],
+  "result": {
+    "item": "flamesofthenether:checkered_polished_blackstone_tiles"
+  },
+  "show_notification": true
+}

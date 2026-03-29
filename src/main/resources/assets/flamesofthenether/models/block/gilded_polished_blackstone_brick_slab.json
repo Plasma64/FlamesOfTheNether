@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "flamesofthenether:block/gilded_polished_blackstone_bricks",
-    "side": "flamesofthenether:block/gilded_polished_blackstone_bricks",
-    "top": "flamesofthenether:block/gilded_polished_blackstone_bricks"
-  }
-}

@@ -1,15 +1,11 @@
 package net.plasma64.flamesofthenether;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionUtils;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,16 +14,16 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.plasma64.flamesofthenether.client.particle.FOTNParticleRegistry;
-import net.plasma64.flamesofthenether.client.particle.RoseHealerParticle;
+import net.plasma64.flamesofthenether.client.particle.*;
 import net.plasma64.flamesofthenether.misc.FOTNCreativeTabRegistry;
-import net.plasma64.flamesofthenether.misc.FOTNSoundRegistry;
+import net.plasma64.flamesofthenether.misc.FOTNSoundEvents;
 import net.plasma64.flamesofthenether.server.block.FOTNBlockRegistry;
 import net.plasma64.flamesofthenether.server.block.blockentity.FOTNBlockEntityRegistry;
 import net.plasma64.flamesofthenether.server.effect.FOTNEffectRegistry;
 import net.plasma64.flamesofthenether.server.entity.FOTNEntityRegistry;
 import net.plasma64.flamesofthenether.server.event.FOTNCommonEvents;
 import net.plasma64.flamesofthenether.server.item.FOTNItemRegistry;
+import net.plasma64.flamesofthenether.server.item.PocketAshesItem;
 import net.plasma64.flamesofthenether.server.potion.FOTNPotionRegistry;
 import org.slf4j.Logger;
 
@@ -43,7 +39,7 @@ public class FlamesOfTheNether {
         FOTNItemRegistry.register(modEventBus);
         FOTNBlockRegistry.register(modEventBus);
         FOTNParticleRegistry.register(modEventBus);
-        FOTNSoundRegistry.register(modEventBus);
+        FOTNSoundEvents.register(modEventBus);
         FOTNEffectRegistry.register(modEventBus);
         FOTNBlockEntityRegistry.register(modEventBus);
         FOTNEntityRegistry.register(modEventBus);
@@ -56,9 +52,7 @@ public class FlamesOfTheNether {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-
-            BrewingRecipeRegistry.addRecipe(Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), Potions.REGENERATION)), Ingredient.of(FOTNItemRegistry.ROSE_QUARTZ.get()), PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.ROSES_BLESSING_POTION.get()));
-            BrewingRecipeRegistry.addRecipe(Ingredient.of(PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.ROSES_BLESSING_POTION.get())), Ingredient.of(Items.REDSTONE), PotionUtils.setPotion(new ItemStack(Items.POTION), FOTNPotionRegistry.LONG_ROSES_BLESSING_POTION.get()));
+            FOTNPotionRegistry.setup();
         });
     }
 
@@ -78,12 +72,20 @@ public class FlamesOfTheNether {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            event.enqueueWork(() -> {
+                ItemProperties.register(FOTNItemRegistry.POCKET_ASHES.get(), ResourceLocation.withDefaultNamespace("filled"), (itemStack, level, livingEntity, seed) -> {
+                    return PocketAshesItem.getAmmo(itemStack) >= PocketAshesItem.MAX_AMMO ? 1.0F : 0.0F;
+                });
+            });
         }
 
         @SubscribeEvent
         public static void registerParticleProvider(RegisterParticleProvidersEvent event) {
             event.registerSpriteSet(FOTNParticleRegistry.ROSE_HEALER.get(), RoseHealerParticle.Provider::new);
+            event.registerSpriteSet(FOTNParticleRegistry.CRIMSON_FUME.get(), CrimsonFumeParticle.Provider::new);
+            event.registerSpriteSet(FOTNParticleRegistry.CRIMSON_SPRAY.get(), CrimsonSprayParticle.Provider::new);
+            event.registerSpriteSet(FOTNParticleRegistry.WARPED_FUME.get(), WarpedFumeParticle.Provider::new);
+            event.registerSpriteSet(FOTNParticleRegistry.WARPED_SPRAY.get(), WarpedSprayParticle.Provider::new);
         }
     }
 }

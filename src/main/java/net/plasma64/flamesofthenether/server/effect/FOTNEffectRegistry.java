@@ -14,6 +14,10 @@ public class FOTNEffectRegistry {
 
     public static final RegistryObject<MobEffect> ROSES_BLESSING = MOB_EFFECTS.register("roses_blessing",
             () -> new RosesBlessingEffect(MobEffectCategory.BENEFICIAL, 0xf06cf1));
+    public static final RegistryObject<MobEffect> SOUL_SIPHON = MOB_EFFECTS.register("soul_siphon",
+            () -> new SoulSiphonEffect(MobEffectCategory.BENEFICIAL, 8188661));
+    public static final RegistryObject<MobEffect> SWIFT_SOUL = MOB_EFFECTS.register("swift_soul",
+            () -> new SwiftSoulEffect(MobEffectCategory.BENEFICIAL, 2925227));
 
     public static void register (IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

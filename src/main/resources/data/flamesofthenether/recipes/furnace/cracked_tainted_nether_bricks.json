@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "flamesofthenether:tainted_nether_bricks"
+  },
+  "result": "flamesofthenether:cracked_tainted_nether_bricks"
+}

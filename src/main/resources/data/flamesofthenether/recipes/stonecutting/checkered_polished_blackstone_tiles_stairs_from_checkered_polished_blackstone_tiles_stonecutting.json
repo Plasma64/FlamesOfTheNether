@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "flamesofthenether:checkered_polished_blackstone_tiles"
+  },
+  "result": "flamesofthenether:checkered_polished_blackstone_tiles_stairs"
+}

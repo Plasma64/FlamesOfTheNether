@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "flamesofthenether:block/polished_maroonstone_slab"
+    },
+    "type=double": {
+      "model": "flamesofthenether:block/polished_maroonstone"
+    },
+    "type=top": {
+      "model": "flamesofthenether:block/polished_maroonstone_slab_top"
+    }
+  }
+}

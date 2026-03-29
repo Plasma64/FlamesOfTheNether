@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "flamesofthenether:block/chiseled_polished_maroonstone"
+    },
+    "lit=true": {
+      "model": "flamesofthenether:block/chiseled_polished_maroonstone_lit"
+    }
+  }
+}

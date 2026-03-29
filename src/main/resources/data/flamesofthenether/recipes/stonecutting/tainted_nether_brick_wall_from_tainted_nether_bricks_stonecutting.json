@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "flamesofthenether:tainted_nether_bricks"
+  },
+  "result": "flamesofthenether:tainted_nether_brick_wall"
+}

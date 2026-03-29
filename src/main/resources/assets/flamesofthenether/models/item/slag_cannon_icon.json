@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "flamesofthenether:item/slag_cannon_icon"
-  }
-}

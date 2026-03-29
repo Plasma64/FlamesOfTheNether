@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "group": "rose_quartz",
+  "ingredient": {
+    "item": "flamesofthenether:tainted_nether_rose_quartz_ore"
+  },
+  "result": "flamesofthenether:rose_quartz"
+}

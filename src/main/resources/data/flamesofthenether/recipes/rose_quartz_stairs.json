@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": [
+      {
+        "item": "flamesofthenether:chiseled_rose_quartz_block"
+      },
+      {
+        "item": "flamesofthenether:rose_quartz_block"
+      },
+      {
+        "item": "flamesofthenether:rose_quartz_pillar"
+      }
+    ]
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "flamesofthenether:rose_quartz_stairs"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "flamesofthenether:item/pocket_ashes"
+  },
+  "overrides":[
+    {
+      "predicate": {
+        "filled": 1
+      },
+      "model": "flamesofthenether:item/pocket_ashes_filled"
+    }
+  ]
+}

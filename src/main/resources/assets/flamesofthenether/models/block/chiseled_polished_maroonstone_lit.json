@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "flamesofthenether:block/chiseled_polished_maroonstone_lit"
+  }
+}
